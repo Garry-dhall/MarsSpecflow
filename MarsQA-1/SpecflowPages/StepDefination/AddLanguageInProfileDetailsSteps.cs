@@ -16,7 +16,7 @@ namespace MarsQA_1.Feature
         [Given(@"I am on profile page")]
         public void GivenIAmOnProfilePage()
 
-        { 
+        { //Open Profile
            Driver.driver.FindElement(By.XPath("//A[text()='Profile']")).Click();
         }
         

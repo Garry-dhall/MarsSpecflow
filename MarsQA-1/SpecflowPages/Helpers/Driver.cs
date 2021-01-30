@@ -16,7 +16,8 @@ namespace MarsQA_1.Helpers
         public static void Initialize()
         {
             //Defining the browser
-            driver = new ChromeDriver(@"C:\Users\minty\OneDrive\Desktop\Chromepath");
+            driver = new ChromeDriver();
+                //(@"C:\Users\minty\OneDrive\Desktop\Chromepath");
             TurnOnWait();
             //Maximise the window
             driver.Manage().Window.Maximize();
