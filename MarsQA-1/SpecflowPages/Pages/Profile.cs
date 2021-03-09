@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MarsQA_1.SpecflowPages.Pages
+namespace MarsQA_1.Pages
 {
     class Profile
     {
