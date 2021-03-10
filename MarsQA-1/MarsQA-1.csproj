@@ -176,6 +176,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SpecflowPages\Credentials.cs" />
+    <Compile Include="SpecflowPages\StepDefination\SignInSteps.cs" />
     <Compile Include="SpecflowPages\StepDefination\SIgn up\SignupSteps.cs" />
     <Compile Include="SpecflowPages\Pages\Sign up.cs" />
     <Compile Include="SpecflowPages\StepDefination\DeletelanguageSteps.cs" />
@@ -194,6 +196,7 @@
     <None Include="App.config" />
     <None Include="Feature\Deletelanguage.feature" />
     <None Include="Feature\Profile.feature" />
+    <None Include="Feature\SignIn.feature" />
     <None Include="Feature\Signup.feature" />
     <None Include="Feature\updateprofile.feature" />
     <None Include="SpecflowTests\Data\Data.xlsx" />

@@ -16,15 +16,15 @@ namespace MarsQA_1.Utils
     {
 
         [BeforeScenario("@mytag")]
-        public void Setup()
-        {
-            //launch the browser
-            Initialize();
-            ExcelLibHelper.PopulateInCollection(@"MarsQA-1\SpecflowTests\Data\Mars.xlsx", "Credentials");
-            //call the SignIn class
-            SignIn.SigninStep();
-            Thread.Sleep(5000);
-        }
+        //public void Setup()
+        //{
+        //    //launch the browser
+        //    Initialize();
+        //    ExcelLibHelper.PopulateInCollection(@"MarsQA-1\SpecflowTests\Data\Mars.xlsx", "Credentials");
+        //    //call the SignIn class
+        //    SignIn.SigninStep();
+        //    Thread.Sleep(5000);
+        //}
 
         [AfterScenario("@mytag")]
         public void TearDown()
