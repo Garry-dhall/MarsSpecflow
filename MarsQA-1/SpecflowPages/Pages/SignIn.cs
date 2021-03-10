@@ -10,33 +10,35 @@ namespace MarsQA_1.Pages
         private static IWebElement Email => Driver.driver.FindElement(By.XPath("(//input[@name = 'email'])"));
         private static IWebElement Password => Driver.driver.FindElement(By.XPath("//INPUT[@type='password']"));
         private static IWebElement LoginBtn => Driver.driver.FindElement(By.XPath("//BUTTON[@class='fluid ui teal button'][text()='Login']"));
-        public static void SigninStep()
+        public static void ClickSignInBtn()
         {
-            Driver.NavigateUrl();
-            Thread.Sleep(5000);
             SignInBtn.Click();
+        }
+        public static void EnterCredentials()
+        {
+            ExcelLibHelper.PopulateInCollection(@"MarsQA-1\SpecflowTests\Data\Mars.xlsx", "Credentials");
             Email.SendKeys(ExcelLibHelper.ReadData(3, "username"));
-            Thread.Sleep(5000);
             Password.SendKeys(ExcelLibHelper.ReadData(3, "password"));
+        }
+        public static void ClickOnLoginBtn()
+        { 
             LoginBtn.Click();
             Thread.Sleep(5000);
         }
         public static void Login()
         {
-            Driver.NavigateUrl();
-
-            Thread.Sleep(5000);
+           Driver.NavigateUrl();
+           Thread.Sleep(5000);
             //Enter Url
-            Driver.driver.FindElement(By.XPath("//A[@class='item'][text()='Sign In']")).Click();
-            Thread.Sleep(5000);
+           Driver.driver.FindElement(By.XPath("//A[@class='item'][text()='Sign In']")).Click();
+           Thread.Sleep(5000);
             //Enter Username
-            Driver.driver.FindElement(By.XPath("(//input[@name = 'email'])")).SendKeys("garrydhallnz@gmail.com");
-           
-            //Enter password
-            Driver.driver.FindElement(By.XPath("//INPUT[@type='password']")).SendKeys("Chef@123");
+           Driver.driver.FindElement(By.XPath("(//input[@name = 'email'])")).SendKeys("garrydhallnz@gmail.com");
+           //Enter password
+           Driver.driver.FindElement(By.XPath("//INPUT[@type='password']")).SendKeys("Test@123");
 
             //Click on Login Button
-            Driver.driver.FindElement(By.XPath("//BUTTON[@class='fluid ui teal button'][text()='Login']")).Click();
+           Driver.driver.FindElement(By.XPath("//BUTTON[@class='fluid ui teal button'][text()='Login']")).Click();
 
         }
     }

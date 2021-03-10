@@ -15,7 +15,7 @@ namespace MarsQA_1.Utils
     public class Start : Driver
     {
 
-        [BeforeScenario]
+        [BeforeScenario("@mytag")]
         public void Setup()
         {
             //launch the browser
@@ -26,7 +26,7 @@ namespace MarsQA_1.Utils
             Thread.Sleep(5000);
         }
 
-        [AfterScenario]
+        [AfterScenario("@mytag")]
         public void TearDown()
         {
 

@@ -75,11 +75,11 @@ namespace MarsQA_1.Feature
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("I want to delete existing language")]
-        [NUnit.Framework.CategoryAttribute("testTag3")]
+        [NUnit.Framework.CategoryAttribute("mytag")]
         public virtual void IWantToDeleteExistingLanguage()
         {
             string[] tagsOfScenario = new string[] {
-                    "testTag3"};
+                    "mytag"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("I want to delete existing language", null, tagsOfScenario, argumentsOfScenario);
 #line 4

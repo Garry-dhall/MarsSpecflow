@@ -1,7 +1,7 @@
 ﻿Feature: update profile
 	Simple calculator for adding two numbers
 
-@testTag2
+@mytag
 Scenario: Edit existing language
 	Given I am on Language tab
 	When I click on edit button and edit existing language

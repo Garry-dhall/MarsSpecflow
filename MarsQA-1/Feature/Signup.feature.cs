@@ -75,11 +75,9 @@ namespace MarsQA_1.Feature
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Validate Registeration feature")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
         public virtual void ValidateRegisterationFeature()
         {
-            string[] tagsOfScenario = new string[] {
-                    "mytag"};
+            string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Validate Registeration feature", null, tagsOfScenario, argumentsOfScenario);
 #line 5

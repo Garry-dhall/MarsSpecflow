@@ -1,7 +1,7 @@
 ﻿Feature: Signup 
 	Simple calculator for adding two numbers
 
-@mytag
+
 Scenario: Validate Registeration feature
 	Given I am on home page
 	When  I clicked on Join button

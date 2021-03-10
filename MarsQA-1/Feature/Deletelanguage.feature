@@ -1,6 +1,6 @@
 ﻿Feature: Deletelanguage
 
-@testTag3
+@mytag
 Scenario: I want to delete existing language
 	Given I am on language tab
 	When  I click on delete button

@@ -1,5 +1,5 @@
 ﻿Feature: Add language in profile details
-@testTag1
+@mytag
 Scenario: Add new language to profile
 	Given I am on profile page
 	When  I click on language button

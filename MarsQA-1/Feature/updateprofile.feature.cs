@@ -75,11 +75,11 @@ namespace MarsQA_1.Feature
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Edit existing language")]
-        [NUnit.Framework.CategoryAttribute("testTag2")]
+        [NUnit.Framework.CategoryAttribute("mytag")]
         public virtual void EditExistingLanguage()
         {
             string[] tagsOfScenario = new string[] {
-                    "testTag2"};
+                    "mytag"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Edit existing language", null, tagsOfScenario, argumentsOfScenario);
 #line 5

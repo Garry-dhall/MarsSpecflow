@@ -32,12 +32,13 @@ namespace MarsQA_1.Helpers
         //Implicit Wait
         public static void TurnOnWait()
         {
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
 
         }
 
         public static void NavigateUrl()
         {
+            TurnOnWait();
             driver.Navigate().GoToUrl("http://192.168.99.100:5000");
         }
 

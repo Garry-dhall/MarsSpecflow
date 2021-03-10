@@ -75,11 +75,11 @@ namespace MarsQA_1.Feature
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Add new language to profile")]
-        [NUnit.Framework.CategoryAttribute("testTag1")]
+        [NUnit.Framework.CategoryAttribute("mytag")]
         public virtual void AddNewLanguageToProfile()
         {
             string[] tagsOfScenario = new string[] {
-                    "testTag1"};
+                    "mytag"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add new language to profile", null, tagsOfScenario, argumentsOfScenario);
 #line 3
