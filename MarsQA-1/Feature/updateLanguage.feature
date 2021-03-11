@@ -1,4 +1,4 @@
-﻿Feature: update profile
+﻿Feature: update Language
 	Simple calculator for adding two numbers
 
 @mytag

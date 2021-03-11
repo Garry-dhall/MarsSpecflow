@@ -176,12 +176,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SpecflowPages\StepDefination\AvailibilitySteps.cs" />
     <Compile Include="SpecflowPages\Credentials.cs" />
     <Compile Include="SpecflowPages\StepDefination\SignInSteps.cs" />
     <Compile Include="SpecflowPages\StepDefination\SIgn up\SignupSteps.cs" />
     <Compile Include="SpecflowPages\Pages\Sign up.cs" />
     <Compile Include="SpecflowPages\StepDefination\DeletelanguageSteps.cs" />
-    <Compile Include="SpecflowPages\StepDefination\UpdateProfileSteps.cs" />
+    <Compile Include="SpecflowPages\StepDefination\UpdateLanguageSteps.cs" />
     <Compile Include="SpecflowPages\StepDefination\AddLanguageInProfileDetailsSteps.cs" />
     <Compile Include="SpecflowPages\Pages\Profile.cs" />
     <Compile Include="SpecflowPages\Helpers\CommonMethods.cs" />
@@ -194,11 +195,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Feature\Availibility.feature" />
     <None Include="Feature\Deletelanguage.feature" />
-    <None Include="Feature\Profile.feature" />
+    <None Include="Feature\Language.feature" />
     <None Include="Feature\SignIn.feature" />
     <None Include="Feature\Signup.feature" />
-    <None Include="Feature\updateprofile.feature" />
+    <None Include="Feature\updateLanguage.feature" />
     <None Include="SpecflowTests\Data\Data.xlsx" />
     <None Include="packages.config" />
     <None Include="SpecflowTests\Data\Mars.xlsx" />

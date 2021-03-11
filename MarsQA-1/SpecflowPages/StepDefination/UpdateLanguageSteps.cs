@@ -7,7 +7,7 @@ using TechTalk.SpecFlow;
 namespace MarsQA_1.Feature
 {
     [Binding]
-    public class UpdateProfileSteps
+    public class UpdateProfileSteps//==>UpdateLanguageSteps
     {
         [Given(@"I am on Language tab")]
         public void GivenIAmOnLanguageTab()
