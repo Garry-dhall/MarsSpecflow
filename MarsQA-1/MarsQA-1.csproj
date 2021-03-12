@@ -176,6 +176,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SpecflowPages\StepDefination\DeleteSkillSteps.cs" />
+    <Compile Include="SpecflowPages\StepDefination\SkillsSteps.cs" />
+    <Compile Include="SpecflowPages\Pages\Skills.cs" />
+    <Compile Include="SpecflowPages\StepDefination\DescriptionSteps.cs" />
     <Compile Include="SpecflowPages\StepDefination\AvailibilitySteps.cs" />
     <Compile Include="SpecflowPages\Credentials.cs" />
     <Compile Include="SpecflowPages\StepDefination\SignInSteps.cs" />
@@ -197,9 +201,12 @@
     <None Include="App.config" />
     <None Include="Feature\Availibility.feature" />
     <None Include="Feature\Deletelanguage.feature" />
+    <None Include="Feature\DeleteSkill.feature" />
+    <None Include="Feature\Description.feature" />
     <None Include="Feature\Language.feature" />
     <None Include="Feature\SignIn.feature" />
     <None Include="Feature\Signup.feature" />
+    <None Include="Feature\Skills.feature" />
     <None Include="Feature\updateLanguage.feature" />
     <None Include="SpecflowTests\Data\Data.xlsx" />
     <None Include="packages.config" />

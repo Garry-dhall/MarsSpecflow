@@ -21,7 +21,7 @@ namespace MarsQA_1.Utils
             //launch the browser
             Initialize();
             Driver.TurnOnWait();
-            ExcelLibHelper.PopulateInCollection(@"MarsQA-1\SpecflowTests\Data\Mars.xlsx", "Credentials");
+            //ExcelLibHelper.PopulateInCollection(@"MarsQA-1\SpecflowTests\Data\Mars.xlsx", "Credentials");
             //call the SignIn class
             SignIn.Login();
         }
@@ -31,10 +31,10 @@ namespace MarsQA_1.Utils
         {
 
             // Screenshot
-            string img = CommonMethods.SaveScreenShotClass.SaveScreenshot(Driver.driver, "Report");
+            CommonMethods.SaveScreenShotClass.SaveScreenshot(Driver.driver, "Report");
             CommonMethods.ExtentReports();
-           CommonMethods.test = CommonMethods.Extent.StartTest("Reports");
-            test.Log(LogStatus.Info, "Snapshot below: " + test.AddScreenCapture(img));
+            CommonMethods.test = CommonMethods.Extent.StartTest("Reports");
+            CommonMethods.test.Log(LogStatus.Info, "Snapshot below");
             // end test. (Reports)
             CommonMethods.Extent.EndTest(test);
             // calling Flush writes everything to the log file (Reports)
