@@ -36,7 +36,7 @@ namespace MarsQA_1.Feature
         public void WhenIEnterValidCredentials(Table table)
         {
             Driver.TurnOnWait();
-            dynamic tableDetails = table.CreateInstance<Credentials>();
+            var tableDetails = table.CreateInstance<Credentials>();
             Driver.driver.FindElement(By.XPath("//input[@name = 'email']")).SendKeys(tableDetails.Email);
             Driver.driver.FindElement(By.XPath("//INPUT[@type='password']")).SendKeys(tableDetails.Password);
             Thread.Sleep(5000);
