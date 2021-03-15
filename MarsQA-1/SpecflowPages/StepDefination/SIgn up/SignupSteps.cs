@@ -40,7 +40,6 @@ namespace MarsQA_1.Feature
         {
             Driver.TurnOnWait();
             SignUp.ClickOnJoinButton();
-
         }
         
         [Then(@"I should be able to Register successfully\.")]
@@ -49,7 +48,6 @@ namespace MarsQA_1.Feature
 
             try
             {
-
                 CommonMethods.ExtentReports();
                 CommonMethods.test = CommonMethods.Extent.StartTest("Registration");
                 string expectedValue = "Registration successful";
@@ -63,13 +61,10 @@ namespace MarsQA_1.Feature
             {
                 CommonMethods.test.Log(LogStatus.Fail, "Reigistration Unsuccessfull", e.Message);
                 SaveScreenShotClass.SaveScreenshot(Driver.driver, "Test Fail Screenshot");
-                
-
             }
             CommonMethods.Extent.EndTest(test);
             CommonMethods.Extent.Flush();
             Driver.Close();
-
         }
     }
 }

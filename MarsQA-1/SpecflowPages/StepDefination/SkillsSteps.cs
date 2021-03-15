@@ -73,7 +73,7 @@ namespace MarsQA_1.Feature
             var popUp = Driver.driver.FindElement(By.XPath("//div[@class = 'ns-box ns-growl ns-effect-jelly ns-type-success ns-show']")).Text;
             var expectedv = "C# has been added to your skills";
             Assert.AreEqual(expectedv, popUp, "assertion failed");
-            Console.WriteLine("Skill added");
+            Console.WriteLine("Skill has been added");
         }
         
         [Then(@"I sould be able to see updated skill")]
@@ -82,7 +82,7 @@ namespace MarsQA_1.Feature
             var popUp = Driver.driver.FindElement(By.XPath("//div[@class = 'ns-box ns-growl ns-effect-jelly ns-type-success ns-show']")).Text;
             var expectedv = "API has been updated to your skills";
             Assert.AreEqual(expectedv, popUp, "assertion failed");
-            Console.WriteLine("Skill updated");
+            Console.WriteLine("Skill has been updated");
 
         }
         

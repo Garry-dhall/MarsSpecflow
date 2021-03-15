@@ -43,7 +43,7 @@ namespace MarsQA_1.Feature
             }
             else
             {
-                Console.WriteLine("Language not updated");
+                Console.WriteLine("Language has been not updated");
             }
         }
 

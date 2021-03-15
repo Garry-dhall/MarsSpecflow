@@ -23,7 +23,7 @@ namespace MarsQA_1.Feature
         public void WhenIClickOnDeleteButton()
         {//Deleting a language
          Driver.driver.FindElement(By.XPath("//td[text()='English']//following::i[2]")).Click();
-            Thread.Sleep(5000);
+            Thread.Sleep(3000);
         }
 
         [Then(@"I should be able to delete the language")]
@@ -38,7 +38,7 @@ namespace MarsQA_1.Feature
             }
              else
             {
-                Console.WriteLine("Language Not Deleted");
+                Console.WriteLine("Language  has been not Deleted");
             }
 
         }

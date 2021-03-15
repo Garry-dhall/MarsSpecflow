@@ -55,7 +55,7 @@ namespace MarsQA_1.Feature
             
             else
             {
-                Console.WriteLine("Language not added");
+                Console.WriteLine("Language has been not added");
             }
         }
     }
