@@ -76,7 +76,7 @@ namespace MarsQA_1.SpecflowPages.Pages
             Driver.TurnOnWait();
             IList<IWebElement> rowCount = Driver.driver.FindElements(By.XPath("//h3[text() = 'Skills']//following::table//tbody//tr//td[1]"));
             int row = rowCount.Count;
-            Console.WriteLine(row);
+            Console.WriteLine(rows );
             for(int a = 1; a<=row; a++)
             {
                 var clickDel = Driver.driver.FindElement(By.XPath("//div[@class='ui bottom attached tab segment tooltip-target active']//tbody["+ a +"]//tr[1]//td//span[@class ='button'][2]"));
